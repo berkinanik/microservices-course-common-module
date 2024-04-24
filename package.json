@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "npm run clean && tsc",
-    "clean": "rimraf ./build"
+    "clean": "rimraf ./build",
+    "publish": "git add . && git commit -m \"common package updates\" && npm version patch && npm run build && npm publish --access public"
   },
   "keywords": [],
   "author": "",
