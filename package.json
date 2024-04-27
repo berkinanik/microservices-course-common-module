@@ -9,12 +9,12 @@
   ],
   "exports": {
     ".": {
-      "import": "./build/index.js",
-      "require": "./build/index.js"
+      "types": "./build/index.d.ts",
+      "default": "./build/index.js"
     },
     "./mocks": {
-      "import": "./build/mocks/index.js",
-      "require": "./build/mocks/index.js"
+      "types": "./build/mocks/index.d.ts",
+      "default": "./build/mocks/index.js"
     }
   },
   "scripts": {
