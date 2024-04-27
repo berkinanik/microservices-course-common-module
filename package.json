@@ -2,11 +2,6 @@
   "name": "@b.anik/common",
   "version": "0.0.16",
   "description": "",
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
-  "files": [
-    "build/**/*"
-  ],
   "exports": {
     ".": {
       "types": "./build/index.d.ts",
