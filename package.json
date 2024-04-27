@@ -1,7 +1,10 @@
 {
   "name": "@b.anik/common",
-  "version": "0.0.17",
+  "version": "0.0.16",
   "description": "",
+  "files": [
+    "build/**/*"
+  ],
   "exports": {
     ".": {
       "types": "./build/index.d.ts",
