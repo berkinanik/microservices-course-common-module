@@ -7,6 +7,16 @@
   "files": [
     "build/**/*"
   ],
+  "exports": {
+    ".": {
+      "import": "./build/index.js",
+      "require": "./build/index.js"
+    },
+    "./mocks": {
+      "import": "./build/mocks/index.js",
+      "require": "./build/mocks/index.js"
+    }
+  },
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rimraf ./build",
