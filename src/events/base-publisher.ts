@@ -18,7 +18,9 @@ export abstract class Publisher<T extends Event> {
           return reject(err);
         }
 
-        console.log(`>>>[${this.subject}]: event published`);
+        if (process.env.NODE_ENV !== 'test') {
+          console.log(`>>>[${this.subject}]: event published`);
+        }
 
         resolve();
       });

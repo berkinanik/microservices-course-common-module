@@ -35,9 +35,11 @@ export abstract class Listener<T extends Event> {
     );
 
     subscription.on('message', (msg: Message) => {
-      console.log(
-        `>>>[${this.subject}][${this.queueGroupName}]: message#${msg.getSequence()} received`,
-      );
+      if (process.env.NODE_ENV !== 'test') {
+        console.log(
+          `>>>[${this.subject}][${this.queueGroupName}]: message#${msg.getSequence()} received`,
+        );
+      }
 
       const parsedData = this.parseMessage(msg);
 
