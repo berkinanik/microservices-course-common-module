@@ -8,4 +8,5 @@ export enum Subjects {
   ExpirationComplete = 'expiration:complete',
 
   PaymentComplete = 'payment:complete',
+  PaymentAwaited = 'payment:awaited',
 }
