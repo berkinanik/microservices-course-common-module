@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/berkinanik/microservices-course-ticketing-app.git"
+    "url": "https://github.com/berkinanik/microservices-course-common-module.git"
   },
   "devDependencies": {
     "@types/cookie-session": "^2.0.49",
